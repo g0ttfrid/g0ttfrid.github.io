@@ -13,7 +13,7 @@ Não, não é um 0day, é apenas mais um patch entre tantos outros, porém curio
 
 
 Mas antes vamos passar por algum conteúdo para entender onde iremos chegar.  
- 
+
 
 ## EDR 
 
@@ -51,7 +51,7 @@ Apesar de ser um mecanismo robusto, o ETW tem suas limitações, principalmente 
 
 Basicamente é obtido o endereço em memória da função responsável pelo envio dos eventos, alterada a permissão no endereço obtido para que seja possível escrever, e copiado o patch para o entrypoint, que irá alterar o fluxo da função, fazendo com que a função retorne imediatamente ao ser chamada. 
 
-```  
+```csharp
 static void OldBlindETW() {
 	IntPtr ntdll = LoadLibrary("ntdll.dll");
 	IntPtr ntTraceEvent = GetProcAddress(ntdll, "NtTraceEvent");
@@ -78,7 +78,7 @@ Por já ser um método bem batido dentre as técnicas contra os EDRs, existem re
 
 Analisando a forma como esse comportamento é acionado, principalmente após ler o [artigo](https://www.elastic.co/security-labs/doubling-down-etw-callstacks) da Elastic mostrando a regra, lembrei do conceito explorado no Hell's Gate de usar funções vizinhas não hookadas na ntdll, técnica que se apoia na estrutura previsível dos stubs de syscalls mantendo uma consistência relativa entre chamadas adjacentes (32 bytes). A partir disso, resolvi utilizar o mesmo princípio de previsibilidade para aplicá-lo em uma nova abordagem para o patch.
 
-```
+```yml
 api where process.Ext.api.name :  "WriteProcessMemory*" and 
 
 process.Ext.api.summary : ("*ntdll.dll!Etw*", "*ntdll.dll!NtTrace*") and 
@@ -96,7 +96,7 @@ Entendendo que a regra é acionada ao escrever em um endereço de memória refer
 
 ![x64dbg2](/assets/img/posts/post01-05.png)
 
-```
+```csharp
 static void BlindETW()
 {
     IntPtr ntdll = LoadLibrary("ntdll.dll");
