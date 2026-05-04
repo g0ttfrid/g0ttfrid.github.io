@@ -58,6 +58,7 @@ defaults:
       comments: false
       toc: true
       permalink: /posts/:title/
+      author: g0ttfrid
   - scope:
       path: ""
       type: tabs
