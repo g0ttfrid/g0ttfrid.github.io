@@ -139,7 +139,7 @@ Agora vamos por a prova contra os EDRs novamente.
 Nota: Duas das soluções de EDR mostradas durante esse post não estavam atualizadas, pode ser que com novas regras esse método de patch também seja detectado.
 
 
-–[ Últimos pensamentos
+## Pensamentos finais
 
 Tentei mostrar nesse post que uma mudança pequena numa abordagem já conhecida foi suficiente para contornar regras específicas. Não porque o EDR é fraco, mas porque regras baseadas em endereços fixos são por natureza frágeis diante de pequenas variações.
 
@@ -148,7 +148,7 @@ Embora funcional para os testes executados, como tentei explicar na seção sobr
 Para maiores detalhes e caso queira se aprofundar no tema, as referências utilizadas nesse post estão listadas abaixo.
 
 
---[ Referencias
+## Referencias
 
 https://learn.microsoft.com/en-us/windows/win32/etw/about-event-tracing 
 https://nostarch.com/evading-edr 
