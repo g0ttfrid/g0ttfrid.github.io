@@ -150,9 +150,9 @@ Para maiores detalhes e caso queira se aprofundar no tema, as referências utili
 
 ## Referencias
 
-https://learn.microsoft.com/en-us/windows/win32/etw/about-event-tracing 
-https://nostarch.com/evading-edr 
-https://www.mdsec.co.uk/2020/03/hiding-your-net-etw/ 
-https://whiteknightlabs.com/2021/12/11/bypassing-etw-for-fun-and-profit/ 
-https://jonny-johnson.medium.com/understanding-etw-patching-9f5af87f9d7b 
-https://www.elastic.co/security-labs/doubling-down-etw-callstacks
+https://learn.microsoft.com/en-us/windows/win32/etw/about-event-tracing\
+https://nostarch.com/evading-edr\
+https://www.mdsec.co.uk/2020/03/hiding-your-net-etw/ \
+https://whiteknightlabs.com/2021/12/11/bypassing-etw-for-fun-and-profit/ \
+https://jonny-johnson.medium.com/understanding-etw-patching-9f5af87f9d7b \
+https://www.elastic.co/security-labs/doubling-down-etw-callstacks\
