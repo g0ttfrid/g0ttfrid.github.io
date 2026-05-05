@@ -144,7 +144,7 @@ Nota: Duas das soluções de EDR mostradas durante esse post não estavam atuali
 
 Tentei mostrar nesse post que uma mudança pequena numa abordagem já conhecida foi suficiente para contornar regras específicas. Não porque o EDR é fraco, mas porque regras baseadas em endereços fixos são por natureza frágeis diante de pequenas variações.
 
-Embora funcional para os testes executados, como tentei explicar na seção sobre o EDR, essa é apenas uma parte do quebra-cabeça que é o tema evasão de EDR, onde soluções diferentes possuem recursos diferentes, às vezes até a mesma solução tem um comportamento diferente em ambientes diferentes e principalmente com atualizações diferentes. Considero que o tema não é tão simples como o Linkedin faz parecer, sou descrente com o termo FUD, ao mesmo tempo (((que por experiência própria, sei))) sabemos que não existe ferramenta 100% eficaz. Acredito até que as soluções EDR estão num caminho que faz sentido, tentando coletar telemetria de várias fontes possíveis, com a consciência (espero ¯\\(ツ)/¯) de que uma delas pode ser facilmente contornada.
+Embora funcional para os testes executados, como tentei explicar na seção sobre o EDR, essa é apenas uma parte do quebra-cabeça que é o tema evasão de EDR, onde soluções diferentes possuem recursos diferentes, às vezes até a mesma solução tem um comportamento diferente em ambientes diferentes e principalmente com atualizações diferentes. Considero que o tema não é tão simples como o Linkedin faz parecer, sou descrente com o termo FUD, ao mesmo tempo sabemos que não existe ferramenta 100% eficaz. Acredito até que as soluções EDR estão num caminho que faz sentido, tentando coletar telemetria de várias fontes possíveis, com a consciência (espero ¯\\(ツ)/¯) de que uma delas pode ser facilmente contornada.
 
 Para maiores detalhes e caso queira se aprofundar no tema, as referências utilizadas nesse post estão listadas abaixo.
 
@@ -156,4 +156,4 @@ Para maiores detalhes e caso queira se aprofundar no tema, as referências utili
 [https://www.mdsec.co.uk/2020/03/hiding-your-net-etw/](https://www.mdsec.co.uk/2020/03/hiding-your-net-etw/)\
 [https://whiteknightlabs.com/2021/12/11/bypassing-etw-for-fun-and-profit/](https://whiteknightlabs.com/2021/12/11/bypassing-etw-for-fun-and-profit/)\
 [https://jonny-johnson.medium.com/understanding-etw-patching-9f5af87f9d7b](https://jonny-johnson.medium.com/understanding-etw-patching-9f5af87f9d7b)\
-[https://www.elastic.co/security-labs/doubling-down-etw-callstacks](https://www.elastic.co/security-labs/doubling-down-etw-callstacks)\
+[https://www.elastic.co/security-labs/doubling-down-etw-callstacks](https://www.elastic.co/security-labs/doubling-down-etw-callstacks)
