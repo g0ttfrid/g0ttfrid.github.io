@@ -1,7 +1,6 @@
 ---
 title: "Dumb Patches Against Smart Defenses"
 date: 2026-05-04
-author: g0ttfrid
 tags: [windows, windows internals, edr, etw]
 toc: true   # tabela de conteúdo automática na sidebar
 ---
