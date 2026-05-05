@@ -30,6 +30,7 @@ O AV tradicional foi projetado principalmente para facilitar a prevenção e det
 
 Alguns possuem funcionalidades como Driver ELAM (Early Launch Antimalware), entre outras, porém no geral a maioria fica nos itens listados acima. Em resumo, o EDR basicamente funciona coletando várias fontes de telemetria e utilizando uma correlação de ações para decidir se é algo malicioso ou não.  
 
+
 ## ETW (Event Tracing for Windows) 
 
 Nesse post vamos focar em uma dessas fontes de telemetria, o Event Tracing for Windows. O ETW é um recurso do Windows para rastreamento de eventos, permitindo monitorar, diagnosticar e depurar eventos de aplicações em nível de usuário, e drivers em nível de kernel. Por exemplo, ele pode ser utilizado pelo desenvolvedor para registrar e consumir eventos de uma forma eficaz, se mostrando uma alternativa ao estilo clássico de depuração com printf (sou do time Console.WriteLine("debug 1")). 
